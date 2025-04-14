@@ -18,3 +18,6 @@
 
 # Live Link to Backend
 https://deploy-fastapi-with-postgresql.onrender.com
+
+# Live Link to Frontend
+https://ellofull-stackfastapi.netlify.app
