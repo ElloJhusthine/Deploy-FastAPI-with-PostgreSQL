@@ -1,11 +1,11 @@
 body {
   font-family: sans-serif;
-  background-color: #f5f5f5;
-  color: #222;
+  background-color: #8cd8e6;
+  color: #ea86ec;
 }
 
 .dark-mode {
-  background-color: #121212;
+  background-color: #ea86ec;
   color: white;
 }
 

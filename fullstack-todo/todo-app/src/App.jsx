@@ -4,7 +4,7 @@ import TaskList from "./components/TaskList";
 import TaskForm from "./components/TaskForm";
 import './App.css'; // Ensure this is imported for styling
 
-const API_URL = "http://localhost:8000/todos";
+const API_URL = "https://deploy-fastapi-with-postgresql.onrender.com/todos";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className={darkMode ? "dark-mode" : ""}>
-      <h1 className={darkMode ? "dark-heading" : "light-heading"}>To-Do App</h1>
+      <h1 className={darkMode ? "dark-heading" : "light-heading"}>To-Do List application</h1>
       
       {/* Dark Mode Toggle Button */}
       <label className="switch">

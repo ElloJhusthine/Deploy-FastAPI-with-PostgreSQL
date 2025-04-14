@@ -48,8 +48,8 @@
 
 /* Dark Mode Styles */
 body.dark-mode {
-  background-color: #121212;
-  color: white;
+  background-color: #7cb1ef;
+  color: rgb(224, 111, 224);
 }
 
 /* General App Styling */
@@ -60,20 +60,20 @@ body.dark-mode {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #f8f9fa; /* Light background for light mode */
+  background-color: rgb(111, 209, 224); /* Light background for light mode */
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #71809f;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 10px rgba(94, 155, 216, 0.2);
   margin-bottom: 1rem;
 }
 
 /* Dark Mode Header */
 body.dark-mode .App-header {
-  background-color: #333;
+  background-color: #c2b0b0;
   color: white;
 }
 
@@ -84,7 +84,7 @@ body.dark-mode h1 {
 
 /* Buttons */
 button {
-  background-color: #4CAF50;
+  background-color: #932a94;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -96,7 +96,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #911776;
 }
 
 button:focus {
@@ -115,7 +115,7 @@ button:focus {
 }
 
 .switch input {
-  opacity: 0;
+  opacity: 30px;
   width: 0;
   height: 0;
 }
