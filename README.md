@@ -14,3 +14,7 @@
 # Setup
 1. Backend: `uvicorn app.main:app --reload`
 2. Frontend: `npm start`
+
+
+# Live Link to Backend
+https://deploy-fastapi-with-postgresql.onrender.com
