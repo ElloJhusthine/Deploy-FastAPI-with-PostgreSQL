@@ -24,6 +24,10 @@ def get_db():
     finally:
         db.close()
 
+@app.get("/")
+async def read_root():
+    return {"message": "Welcome to FastAPI!"}
+
 @app.get("/todos", response_model=list[schemas.ToDoOut])
 def read_todos(db: Session = Depends(get_db)):
     return crud.get_all_todos(db)
