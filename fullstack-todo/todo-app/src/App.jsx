@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import TaskList from "./components/TaskList";
 import TaskForm from "./components/TaskForm";
+import './App.css'; // Ensure this is imported for styling
 
 const API_URL = "http://localhost:8000/todos";
 
@@ -25,13 +26,20 @@ function App() {
 
   return (
     <div className={darkMode ? "dark-mode" : ""}>
-      <h1>To-Do App</h1>
-      <button onClick={() => setDarkMode(!darkMode)}>Toggle Mode</button>
-      <div>
+      <h1 className={darkMode ? "dark-heading" : "light-heading"}>To-Do App</h1>
+      
+      {/* Dark Mode Toggle Button */}
+      <label className="switch">
+        <input type="checkbox" checked={darkMode} onChange={() => setDarkMode(!darkMode)} />
+        <span className="slider"></span>
+      </label>
+
+      <div className="filter-buttons">
         <button onClick={() => setFilter("all")}>All</button>
         <button onClick={() => setFilter("completed")}>Completed</button>
         <button onClick={() => setFilter("pending")}>Pending</button>
       </div>
+
       <TaskForm fetchTasks={fetchTasks} />
       <TaskList tasks={tasks} fetchTasks={fetchTasks} />
     </div>
