@@ -11,7 +11,7 @@ app = FastAPI()
 # Allow frontend access
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Or specify your frontend URL
+    allow_origins=["https://ellofull-stackfastapi.netlify.app"],  # Or specify your frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
